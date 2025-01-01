@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './Calendar.scss';
 import './Popup.scss';
 import './Sidebar.scss';
+
 import { Button } from '@/components/ui/Button';
 // Array for day names to maintain consistency
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
 
 function Calendar() {
   // Core calendar state
