@@ -3,7 +3,7 @@ import './Calendar.scss';
 import './Popup.scss';
 import './Sidebar.scss';
 
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 // Array for day names to maintain consistency
 const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
