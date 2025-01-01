@@ -18,8 +18,8 @@ A modern, feature-rich calendar application built with React that allows users t
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd [your-project-name]
+git clone https://github.com/ashank22/Calendar.git
+cd calendar-task
 ```
 
 2. Install dependencies:
@@ -37,6 +37,7 @@ npm run dev
 - React
 - SCSS for styling
 - @/components/ui/Button (Make sure this component is available in your project)
+- Used Shadcn for components (button)
 
 ## Usage
 
