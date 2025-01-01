@@ -37,6 +37,7 @@ npm run dev
 - React
 - SCSS for styling
 - @/components/ui/Button (Make sure this component is available in your project)
+- used Shadcn for components (button)
 
 ## Usage
 
