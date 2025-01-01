@@ -1,0 +1,91 @@
+/* Sidebar Styles */
+.calendar__sidebar {
+    z-index: 1  ;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px; /* Increased width */
+    height: 100%;
+    background-color: #da8e8e;
+    color: white;
+    padding: 2rem; /* Increased padding for more spacing */
+    transition: left 0.3s ease;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+}
+
+.calendar__sidebar.open {
+    left: 0;
+}
+
+.calendar__sidebar-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem; /* Slightly bigger close icon */
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.calendar__sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem; /* Add some space between the close Button and list */
+}
+
+.calendar__sidebar-list li {
+    margin: 1rem 0;
+    font-size: 1.2rem; /* Slightly larger font for better readability */
+}
+
+.calendar__sidebar-list li strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold; /* Make text bolder for emphasis */
+}
+.calendar__sidebar-item-title {
+    margin-top:1rem;
+}
+
+/* Individual Event Styles */
+.calendar__event {
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem; /* More space between events */
+    border: 1px solid #ccc; /* Light border around events */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for events */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.calendar__event:hover {
+    background-color: #f4f4f4; /* Slight hover effect */
+    border-color: #888; /* Darken the border on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.calendar__event-title {
+    font-size: 1.1rem; /* Larger title font size */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.calendar__sidebar-title{
+    margin: 0.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+.calendar__sidebar-filters{
+    gap: 1rem;
+}
+.calendar__event-time {
+    font-size: 1rem;
+    color: #888; /* Lighter color for time */
+}
+
+.calendar__event-description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666; /* Slightly lighter description text */
+}

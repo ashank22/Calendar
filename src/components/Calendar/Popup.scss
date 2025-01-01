@@ -1,0 +1,139 @@
+.modal {
+  position: fixed;
+  z-index:1;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent background
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
+  &.is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    // Ensure content doesn't overflow in small screens
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .close-Button {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #333;
+      padding: 0.5rem;
+      border-radius: 50%; // Makes the close Button circular
+
+      &:hover {
+        color: red;
+        background-color: #f0f0f0; // Adds a hover effect
+      }
+    }
+  }
+
+  &__body {
+    margin-bottom: 1rem;
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+
+      &:focus {
+        outline: none;
+        border-color: var(--primary-color, #007bff);
+      }
+    }
+  }
+  &__input{
+    margin-left:0.5rem;
+   &-group{
+    margin-bottom: 1rem;
+   } 
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+
+    Button {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease; // Smooth transition on hover
+
+      &.cancel {
+        background-color: #ccc;
+        color: #333;
+
+        &:hover {
+          background-color: #bbb;
+        }
+      }
+
+      &.submit {
+        background-color: var(--primary-color, #007bff);
+        color: white;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
+  }
+}
+
+/* Ensure that modal content is responsive */
+@media (max-width: 600px) {
+  .modal__content {
+    padding: 1.5rem;
+    max-width: 90%; // Ensure it fits well on smaller screens
+  }
+
+  .modal__header h2 {
+    font-size: 1.3rem;
+  }
+
+  .close-Button {
+    font-size: 1rem;
+    padding: 0.3rem;
+  }
+
+  .modal__footer Button {
+    font-size: 0.9rem;
+  }
+}
