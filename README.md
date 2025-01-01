@@ -15,7 +15,6 @@ A modern, feature-rich calendar application built with React that allows users t
 - 💾 Local storage persistence
 - 📤 Export functionality for events
 - 🎨 Category-based event organization
-- ⏰ Event reminders
 - 📋 Detailed event information management
 
 ## Installation
@@ -128,5 +127,5 @@ The application includes responsive design with:
 
 ## Author
 
-ASHANK KUMAR KUSHWAHA
-IIT KHARAGPUR
+#### ASHANK KUMAR KUSHWAHA
+#### IIT KHARAGPUR
